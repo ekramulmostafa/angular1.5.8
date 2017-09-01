@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="try">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="./js/angular.min.js"></script>
+    <script src="./js/app/app.module.js"></script>
+    <script src="./js/app/app.config.js"></script>
     <style>
         .color-red{
             color: red;
@@ -15,6 +17,6 @@
 </head>
 <body>
 <h1 ng-class="{'color-red': name == 'justin'}">Hello <span ng-if="name">{{ name }}</span><span ng-if="!name">World</span> </h1>
-    <input type="text" ng-model="name">
+<input type="text" ng-model="name" />
 </body>
 </html>
