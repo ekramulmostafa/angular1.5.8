@@ -22,9 +22,6 @@
 <body>
 <h1 ng-class="{'color-red': name == 'justin'}">Hello <span ng-if="name">{{ name }}</span><span ng-if="!name">World</span> </h1>
 <input type="text" ng-model="name" />
-<div class="" ng-controller="BlogListController">
-    {{ title }}
-    <button ng-click="clickMe()">Click here</button>
-</div>
+<blog-list></blog-list>
 </body>
 </html>
