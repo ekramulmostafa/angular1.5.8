@@ -5,7 +5,11 @@
     <title>Title</title>
     <script src="./js/angular.min.js"></script>
     <script src="./js/app/app.module.js"></script>
+
     <script src="./js/app/app.config.js"></script>
+
+    <script src="./js/app/blog-list/blog-list.module.js"></script>
+    <script src="./js/app/blog-list/blog-list.component.js"></script>
     <style>
         .color-red{
             color: red;
@@ -18,5 +22,9 @@
 <body>
 <h1 ng-class="{'color-red': name == 'justin'}">Hello <span ng-if="name">{{ name }}</span><span ng-if="!name">World</span> </h1>
 <input type="text" ng-model="name" />
+<div class="" ng-controller="BlogListController">
+    {{ title }}
+    <button ng-click="clickMe()">Click here</button>
+</div>
 </body>
 </html>
