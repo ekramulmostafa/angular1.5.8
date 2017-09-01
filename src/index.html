@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./js/angular.min.js"></script>
+    <style>
+        .color-red{
+            color: red;
+        }
+        .color-green{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+<h1 ng-class="{'color-red': name == 'justin'}">Hello <span ng-if="name">{{ name }}</span><span ng-if="!name">World</span> </h1>
+    <input type="text" ng-model="name">
+</body>
+</html>
