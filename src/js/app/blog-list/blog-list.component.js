@@ -1,10 +1,7 @@
 'use stric';
 
 angular.module('blogList').component('blogList', {
-    template: "<div class=\"\">\n" +
-    "    {{ title }}\n" +
-    "    <button ng-click=\"clickMe()\">Click here</button>\n" +
-    "</div>",
+    templateUrl:'./template/blog-list.html',
     controller: function ($scope) {
         console.log('hello controller');
         $scope.title = 'Hi there';
@@ -13,7 +10,7 @@ angular.module('blogList').component('blogList', {
         $scope.clickMe = function(){
             console.log('clicked');
             $scope.click += 1;
-            $scope.title = 'changed title = '+$scope.click;
+            $scope.title = 'changed title = ' + $scope.click;
 
         }
     }
